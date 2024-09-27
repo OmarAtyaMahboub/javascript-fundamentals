@@ -7,5 +7,3 @@
 ###git push
 
 
-
-development -> staging -> production 
