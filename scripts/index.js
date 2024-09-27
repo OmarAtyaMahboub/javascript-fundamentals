@@ -27,29 +27,43 @@
 // console.log(x / y);
 // console.log(x ** y);
 
-//Mark's BMI calculation
-let markHeight = 1.93;
-let markMass = 78;
-let markBmi = markMass / markHeight ** 2;
-console.log("Mark's BMI = " + markBmi);
+// //Mark's BMI calculation
+// let markHeight = 1.93;
+// let markMass = 78;
+// let markBmi = markMass / markHeight ** 2;
+// console.log("Mark's BMI = " + markBmi);
 
-//John's BMI calculation
-let johnHeight = 1.87;
-let johnMass = 60;
-let johnBmi = johnMass / johnHeight ** 2;
-console.log("John's BMI = " + johnBmi);
+// //John's BMI calculation
+// let johnHeight = 1.87;
+// let johnMass = 60;
+// let johnBmi = johnMass / johnHeight ** 2;
+// console.log("John's BMI = " + johnBmi);
 
-//output
-console.log(`Mark Weighs ${markMass}kg and is ${markHeight}m tall.
-John weighs ${johnMass}kg and is ${johnHeight}m tall.`);
-
-
-
-//comparison output
-(markBmi > johnBmi) ? (console.log("Mark's BMI is bigger")) : (console.log("John's BMI is bigger"));
+// //output
+// console.log(`Mark Weighs ${markMass}kg and is ${markHeight}m tall.
+// John weighs ${johnMass}kg and is ${johnHeight}m tall.`);
 
 
 
+// //comparison output
+// (markBmi > johnBmi) ? (console.log("Mark's BMI is bigger")) : (console.log("John's BMI is bigger"));
 
-//LOGICAL AND, OR
+
+
+//////////////////////////////////////////////////////////
+
+//array functions
+
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+console.log(arr);
+arr.shift();
+console.log(arr);
+arr.unshift(0);
+console.log(arr);
+arr.push(11);
+console.log(arr);
+arr.pop();
+console.log(arr);
+console.log(arr.length)
+
 
