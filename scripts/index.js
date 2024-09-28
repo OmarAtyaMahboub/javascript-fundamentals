@@ -156,4 +156,5 @@
 // --task--
 //make a function that finds the max min difference
 const arr = [1, 4, -7, 2, 14, 'name', 10, -2, 54, -20, 80];
+
 // 'use strict' <3
