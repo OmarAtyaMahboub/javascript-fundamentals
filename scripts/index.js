@@ -155,6 +155,24 @@
 
 // --task--
 //make a function that finds the max min difference
-const arr = [1, 4, -7, 2, 14, 'name', 10, -2, 54, -20, 80];
+function minMaxDiff(arr)
+{
+    let max = arr[0], min = arr[0];
+    for(let i = 0; i < arr.length; i++)
+    {
+        if(typeof arr[i] === "number")
+        {
+            if(max < arr[i])
+                max = arr[i];
 
+            if(min > arr[i])
+                min = arr[i];
+        }
+        else
+            continue;
+    }
+    return max - min;
+}
+const arr = [1, 4, -7, 2, 14, 'name', 10, -2, 54, -20, 80];
+console.log(minMaxDiff(arr));
 // 'use strict' <3
