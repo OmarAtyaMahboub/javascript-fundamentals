@@ -1,3 +1,5 @@
+// 'use strict'
+
 // --DATATYPES--
 // let firstName = `ahmed`;
 // let testNumber = 25;
@@ -153,26 +155,39 @@
 
 // typeof data types in checks are written in strings -> "number"
 
-// --task--
-//make a function that finds the max min difference
-function minMaxDiff(arr)
-{
-    let max = arr[0], min = arr[0];
-    for(let i = 0; i < arr.length; i++)
-    {
-        if(typeof arr[i] === "number")
-        {
-            if(max < arr[i])
-                max = arr[i];
+// --task 1--
+// Make a function that calculates the difference or the summation between the maximum and the minimum element in the given array
+// const arr = [1, 4, -7, 2, 14, 'name', 10, -2, 54, -20, 80];
+// function minMaxDiff(arr)
+// {
+//     let max = arr[0], min = arr[0];
+//     for(let i = 0; i < arr.length; i++)
+//     {
+//         if(typeof arr[i] === "number")
+//         {
+//             if(max < arr[i])
+//                 max = arr[i];
 
-            if(min > arr[i])
-                min = arr[i];
-        }
-        else
-            continue;
-    }
-    return max - min;
-}
-const arr = [1, 4, -7, 2, 14, 'name', 10, -2, 54, -20, 80];
-console.log(minMaxDiff(arr));
-// 'use strict' <3
+//             if(min > arr[i])
+//                 min = arr[i];
+//         }
+//         else
+//             continue;
+//     }
+//     return max - min;
+// }
+// const arr = [1, 4, -7, 2, 14, 'name', 10, -2, 54, -20, 80];
+// console.log(minMaxDiff(arr));
+
+// --task 2--
+// function calcTip(bills, tips, totals)
+// {
+//     for(let i = 0; i < bills.length; i++)
+//     {
+//         (bills[i] >= 50 && bills[i] <= 300) ? (tips.push(bills[i] * .15)) : (tips.push(bills[i] * .2));
+//         totals.push(bills[i] + tips[i]);
+//     }
+// }
+// const bills = [22, 259, 176, 440, 37, 105, 10, 110, 86, 52];
+// const tips = [], totals = [];
+// calcTip(bills, tips, totals);
